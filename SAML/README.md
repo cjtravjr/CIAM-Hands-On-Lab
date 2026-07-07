@@ -22,6 +22,8 @@ To kick off the configuration, I navigated to the Service Provider (`samlsp.com`
 * I navigated to the **Add-Ons** tab, toggled the **SAML2 Web App** integration to active, and opened its configuration panel.
 * Inside the settings, I pasted the ACS URL from the Service Provider into the **Application Callback URL** field, mapping the exact destination path for our federated traffic.
 
+Screenshot 2026-07-06 at 11.57.40 AM
+
 ### 3. Executing the Cryptographic Metadata Exchange
 * Remaining inside the Auth0 SAML Add-on panel, I pivoted to the **Usage** tab.
 * I located the **Identity Provider Metadata** line and downloaded the raw `.xml` descriptor file. This file contains the tenant's public keys, entry endpoints, and the public X.509 security certificate.
