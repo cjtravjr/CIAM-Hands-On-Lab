@@ -24,11 +24,15 @@ To kick off the configuration, I navigated to the Service Provider (`samlsp.com`
 
 <img width="1470" height="956" alt="Screenshot 2026-07-06 at 11 57 40 AM" src="https://github.com/user-attachments/assets/1400db37-fcb0-4788-89d1-745e88652cd6" />
 
+<img width="1470" height="956" alt="Screenshot 2026-07-06 at 11 57 53 AM" src="https://github.com/user-attachments/assets/56b76389-4cad-4042-a29d-9698f9892ed0" />
+
 ### 3. Executing the Cryptographic Metadata Exchange
 * Remaining inside the Auth0 SAML Add-on panel, I pivoted to the **Usage** tab.
 * I located the **Identity Provider Metadata** line and downloaded the raw `.xml` descriptor file. This file contains the tenant's public keys, entry endpoints, and the public X.509 security certificate.
 * I returned to `samlsp.com` under the "Configuration parameters from your IdP" area and uploaded the XML file. 
 * **The Automation Factor:** The Service Provider instantly parsed the XML file to automatically configure and implement the critical parameters required to establish trust, including the **IdP Entity ID, Login URL, and X.509 validation certificates**.
+
+<img width="1470" height="956" alt="Screenshot 2026-07-06 at 12 04 55 PM" src="https://github.com/user-attachments/assets/1802ae7f-4618-44b0-b3ad-294952add1ab" />
 
 ---
 
@@ -45,3 +49,5 @@ While analyzing the real-time routing logs, I captured the protocol traffic duri
 
 ### Security & Privacy Architecture Insight
 In an enterprise CIAM environment, passing raw personal identifiers (like a plain-text email address or full name) across open browser redirection streams introduces severe privacy and security risks. By utilizing a cryptographically bound `NameID` string, the Identity Provider and Service Provider can securely track and authenticate the exact user session based on unique database characters tied to their account—without ever exposing sensitive plain-text data to intercept or tampering.
+
+<img width="1470" height="956" alt="Screenshot 2026-07-06 at 12 10 41 PM" src="https://github.com/user-attachments/assets/1118aee7-ffd3-4796-a1fd-0ed62f94c473" />
