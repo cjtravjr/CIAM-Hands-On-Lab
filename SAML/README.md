@@ -22,7 +22,7 @@ To kick off the configuration, I navigated to the Service Provider (`samlsp.com`
 * I navigated to the **Add-Ons** tab, toggled the **SAML2 Web App** integration to active, and opened its configuration panel.
 * Inside the settings, I pasted the ACS URL from the Service Provider into the **Application Callback URL** field, mapping the exact destination path for our federated traffic.
 
-Screenshot 2026-07-06 at 11.57.40 AM
+<img width="1470" height="956" alt="Screenshot 2026-07-06 at 11 57 40 AM" src="https://github.com/user-attachments/assets/1400db37-fcb0-4788-89d1-745e88652cd6" />
 
 ### 3. Executing the Cryptographic Metadata Exchange
 * Remaining inside the Auth0 SAML Add-on panel, I pivoted to the **Usage** tab.
