@@ -1,4 +1,4 @@
-## Lab: Modern Authentication & Token Architecture via OpenID Connect (OIDC)
+# Lab: Modern Authentication & Token Architecture via OpenID Connect (OIDC)
 
 ### Architectural Overview
 While legacy enterprise ecosystems traditionally rely on XML-heavy SAML profiles, modern web, cloud-native, and mobile architectures utilize **OpenID Connect (OIDC)** as the federated identity standard. Built as an identity layer on top of the OAuth 2.0 framework, OIDC shifts the data transmission model away from heavy SOAP-style payloads over to lightweight, performant **JSON Web Tokens (JWTs)**. 
