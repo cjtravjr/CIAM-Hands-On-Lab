@@ -1,4 +1,4 @@
-# Lab 1: Federated Identity Lifecycle Management via SAML 2.0
+# Lab: Federated Identity Lifecycle Management via SAML 2.0
 
 ## Project Overview
 In this lab, I built and configured an end-to-end Single Sign-On (SSO) connection using the SAML 2.0 protocol. I utilized **Auth0** as the Identity Provider (IdP) to act as the centralized user directory, and integrated it with an external Service Provider (SP), **samlsp.com**. 
