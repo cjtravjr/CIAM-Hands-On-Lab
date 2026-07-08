@@ -23,7 +23,7 @@ In this implementation, I deployed an **OIDC Implicit Flow** to authorize a clie
 
 ### 2. Constructing the Inbound Authorization Request
 * To configure the application side (The Relying Party), I utilized **OIDC Debugger** to construct a standardized OAuth 2.0 authorization request targeting the OpenID Provider.
-* **Endpoint Routing:** I pointed the **Authorize URI** to my specific Auth0 tenant (`https://YOUR_DOMAIN/authorize`), passing the unique **Client ID** to identify the application making the request.
+* **Endpoint Routing:** I pointed the **Authorize URL** to my specific Auth0 tenant, passing the unique **Client ID** to identify the application making the request.
 * **Scope Definition & Privacy Controls:** I explicitly requested the scopes `openid profile email`. In the OIDC protocol, this restricts data exposure to the bare minimum by telling the Identity Provider exactly what user claims the application is authorized to receive, enforcing a strict model of least privilege.
 * **Determining the Flow Type:** I selected `id_token` as the **Response type**. This instructs the OpenID Provider to execute a modern **Implicit Flow**, delivering a cryptographically signed identity passport directly to the client browser upon successful authentication.
 
