@@ -1,5 +1,3 @@
-# Customer Identity & Access Management (CIAM) Portfolio
-
 ## Lab: Modern Authentication & Token Architecture via OpenID Connect (OIDC)
 
 ### Architectural Overview
