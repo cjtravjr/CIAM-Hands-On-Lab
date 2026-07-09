@@ -1,4 +1,4 @@
-# Programmatic Authorization & Delegated Access via OAuth 2.0 (M2M)
+# Lab: Programmatic Authorization & Delegated Access via OAuth 2.0 (M2M)
 
 ### Architectural Overview
 To understand modern Identity and Access Management, a security engineer must enforce the industry's golden rule: **OpenID Connect (OIDC) is for Authentication (Identity), while OAuth 2.0 is strictly for Authorization (Access).**
